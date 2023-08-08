@@ -1,0 +1,47 @@
+:root {
+    --accent: #aadee8;
+    --ac_dark: #4798a3;
+    --ac_black: #06272b;
+    --ac_light: #d3edf1;
+    --ac_white: #fff;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px dashed red; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+.userProfile{
+    display: flex;
+    flex-direction: column;
+}
+.user-box{
+    display: flex;
+}
+.user-card{
+    text-decoration: none;
+}
+.name-loc{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px 5px;
+}
+.name-loc .name .loc{
+    display: flex;
+}
+.name-loc p:nth-child(1){
+    font-weight: 600;
+    color: var(--ac_black);
+}
+.name-loc p:nth-child(2){
+    color: var(--ac_black);
+    font-weight: 400;
+}

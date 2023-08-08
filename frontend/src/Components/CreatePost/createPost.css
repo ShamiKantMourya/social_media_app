@@ -1,0 +1,99 @@
+:root {
+    --accent: #aadee8;
+    --ac_dark: #4798a3;
+    --ac_black: #06272b;
+    --ac_light: #d3edf1;
+    --ac_white: #fff;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px dashed red; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+.create-post{
+    height: 100%;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.create-post-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--ac_light);
+    width: 50vw;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.create-post-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--ac_black);
+}
+.create-post-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.create-post-form input{
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    height: 1.8rem;
+    width: 15rem;
+}
+
+.create-post-form .image-box{
+    height: 90%;
+    width: 90%;
+    margin: 2px 2px;
+}
+.image-box img{
+    padding: 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.text-input-box{
+    padding: 5px;
+    border: 1px solid var(--ac_black);
+    border-radius: 8px;
+    font-weight: 500;
+}
+.create-post-form button{
+    outline: none;
+    border: none;
+}
+.create-post-button{
+    color: var(--accent);
+    background-color: var(--ac_black);
+    font-weight: 500;
+    height: 1.8rem;
+    width: 5rem;
+    margin: 8px 0px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.create-post-button:hover{
+    color: var(--ac_black);
+    background-color: var(--accent);
+    border: 1px solid var(--ac_black);
+}

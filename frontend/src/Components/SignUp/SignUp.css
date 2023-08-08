@@ -1,0 +1,127 @@
+:root {
+  --accent: #aadee8;
+  --ac_dark: #4798a3;
+  --ac_black: #06272b;
+  --ac_light: #d3edf1;
+  --ac_white: #fff;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px dashed red; */
+  font-family: "Montserrat", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+.sign-up-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.Signup-user {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: min(100%, 30rem);
+  height: 27rem;
+  align-items: center;
+  border: 1px solid var(--ac_black);
+  border-radius: 7px;
+  background-color: var(--ac_light);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.Signup-user:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.Signup-user form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px 15px;
+}
+.sign-up {
+  display: flex;
+  font-size: 30px;
+  font-weight: 600;
+  justify-content: center;
+  margin: 5px 0px;
+  padding: 5px 0px;
+  color: var(--ac_dark);
+}
+.sign-up-avatar {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+}
+.signup-form input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5px 5px;
+  height: 2rem;
+  margin: 5px 0px;
+  outline: none;
+  font-weight: 500;
+}
+.sign-up-input-field {
+  border-radius: 7px;
+}
+.sign-up-btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-form button {
+  display: flex;
+  justify-content: center;
+  height: 2rem;
+  width: 5rem;
+  outline: none;
+  font-weight: 500;
+  font-size: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.sign-up-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ac_black);
+  color: var(--ac_light);
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.signup-form button:hover {
+  background-color: var(--ac_light);
+  color: var(--ac_black);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.signup-form a {
+  display: flex;
+  text-decoration: none;
+  height: 2rem;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--ac_black);
+  font-weight: 500;
+  opacity: 0.6;
+}
+.signup-form a:hover {
+  opacity: 1;
+}

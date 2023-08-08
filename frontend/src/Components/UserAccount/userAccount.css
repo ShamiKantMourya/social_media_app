@@ -1,0 +1,175 @@
+:root {
+    --accent: #aadee8;
+    --ac_dark: #4798a3;
+    --ac_black: #06272b;
+    --ac_light: #d3edf1;
+    --ac_white: #fff;
+}
+
+/* font-text = --ac_black
+    header-background = --accent
+
+  */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px dashed red; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+.user-account {
+    display: grid;
+    grid-template-columns: 4rem 3fr 1fr 4rem;
+    height: 100vh;
+}
+
+.user-post-section {
+    overflow-y: auto;
+    background-color: var(--accent);
+    grid-column: 2/3;
+    box-sizing: border-box;
+    padding: 2vmax;
+}
+
+.user-friend-section {
+    background-color: var(--ac_white);
+    grid-column: 3/4;
+    box-sizing: border-box;
+}
+
+.user-profile-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 5px 0px 5px;
+    background-color: var(--ac_light);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    padding: 0px 5px;
+}
+
+.user-profile-container:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.user-profile-avatar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.user-Profile-name {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.user-Profile-editLink {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--ac_black);
+    margin-bottom: 10px;
+}
+
+.followunFollow {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user-followers {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.user-followers button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    height: 1.5rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+.user-profile-follow {
+    border-radius: 5px;
+}
+
+.user-post {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.user-profile-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    height: 1.5rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+.logout-btn {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+}
+.logout-btn button{
+    display: flex;
+    justify-content: center;
+    outline: none;
+    background-color: var(--ac_black);
+    color: var(--ac_light);
+    height: 2rem;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.logout-btn button:hover{
+    background-color: var(--ac_light);
+    color: var(--ac_black);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.user-change-password {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+}
+
+.change-password-text {
+    text-decoration: none;
+    color: var(--ac_black);
+}
+
+.delete-my-profile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.user-follow-data{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+    background-color: var(--ac_light);
+    border-radius: 7px;
+    flex-direction: column;
+    padding: 5px 5px;
+}

@@ -1,0 +1,74 @@
+:root {
+  --accent: #aadee8;
+  --ac_dark: #4798a3;
+  --ac_black: #06272b;
+  --ac_light: #d3edf1;
+  --ac_white: #fff;
+}
+
+/* font-text = --ac_black
+    header-background = --accent
+
+  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px dashed red; */
+  font-family: "Montserrat", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+.avatar-name-userporfile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.user-following {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.user-post {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5px 0px;
+}
+.no-post-text {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 30px;
+}
+.user-profile-page-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-profile-page-btn button {
+  height: 2rem;
+}
+.user-profile-follow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ac_black);
+  color: var(--ac_light);
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0px;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.user-profile-page-btn button:hover {
+  background-color: var(--ac_light);
+  color: var(--ac_black);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
